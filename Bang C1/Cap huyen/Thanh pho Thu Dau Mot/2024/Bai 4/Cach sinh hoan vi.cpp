@@ -54,7 +54,8 @@ signed main()
 
     //Ý tưởng: sinh ra 2^16 trường hợp làm thao tác 1 ở các nút, vậy thì các chỗ còn lại mà còn số 1 sau khi thực hiện
     //thao tác 1 xong sẽ làm thao tác 2. Lấy min số bước thực hiện trong 2^16 cách làm đó.
-
+    //Code: Nguyễn Văn Hoàng Phát (not me, I'm lazy to code again) 
+    
     for(int i = 1; i <= 4; i++)
     for(int j = 1; j <= 4; j++)
     {
