@@ -54,8 +54,8 @@ void dijsktra() {
             v^=1<<i;
             if (i-4>=0) v^=1<<(i-4);
             if (i+4<16) v^=1<<(i+4);
-            if (i-1%4!=3 and i-1>=0) v^=1<<(i-1);
-            if (i+1%4!=0 and i+1<16) v^=1<<(i+1);
+            if ((i-1)%4!=3 and i-1>=0) v^=1<<(i-1);
+            if ((i+1)%4!=0 and i+1<16) v^=1<<(i+1);
             if (!check[v]) if (d[v]>d[u]+1) {d[v]=d[u]+1; q.push({v,d[v]});}
         }
         //Thao tác 2;
